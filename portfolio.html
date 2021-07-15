@@ -17,16 +17,16 @@
 <body>
     <header class="header">
         <div class="conteiner">
-            <nav class="nav">
-                <a href="" class="logo-link"><span class="span">Web</span>Studio</a>
-                <ul class="nav-header">
-                    <li class="navList"><a href="./index.html">Студия</a></li>
-                    <li class="navList"><a href="./portfolio.html" class="activPage">Портфолио</a></li>
-                    <li class="navList"><a href="">Контакты</a></li>
+            <nav class="header__nav">
+                <a href="" class="header__logo"><span class="span">Web</span>Studio</a>
+                <ul class="nav__item">
+                    <li class="nav__list"><a href="./index.html" class="activPage">Студия</a></li>
+                    <li class="nav__list"><a href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav__list"><a href="">Контакты</a></li>
                 </ul>
-                <ul class="contact-header">
-                    <li class="contact"><a href="email:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="contact"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <ul class="contact__item">
+                    <li class="contact__item--em"><a href="email:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="contact__item--tel"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,21 +36,21 @@
         <div class="conteiner">
             <h1></h1>
             <!-- Фильтр по портфолио -->
-            <ul class="button">
-                <li class="portfolio-buttom">
-                    <button type="button">Все</button>
+            <ul class="portfolio__button-list ">
+                <li class="portfolio__button-item">
+                    <button class="button" type="button">Все</button>
                 </li>
-                <li class="portfolio-buttom">
-                    <button type="button">Веб-сайты</button>
+                <li class="portfolio__button-item">
+                    <button class="button" type="button">Веб-сайты</button>
                 </li>
-                <li class="portfolio-buttom">
-                    <button type="button">Приложения</button>
+                <li class="portfolio__button-item">
+                    <button class="button" type="button">Приложения</button>
                 </li>
-                <li class="portfolio-buttom">
-                    <button type="button">Дизайн</button>
+                <li class="portfolio__button-item">
+                    <button class="button" type="button">Дизайн</button>
                 </li>
-                <li class="portfolio-buttom">
-                    <button type="button">Маркетинг</button>
+                <li class="portfolio__button-item">
+                    <button class="button" type="button">Маркетинг</button>
                 </li>
             </ul>
             <!-- prodject -->
@@ -149,55 +149,68 @@
     </main>
     <footer class="footer">
         <div class="conteiner">
-            <div class="footer-adress">
+            <div class="footer__adress">
                 <ul>
                     <li>
-                        <a href="" class="stily-studio"><span class="span">Web</span>Studio </a>
+                        <a href="" class="footer__logo"><span class="span">Web</span>Studio </a>
                     </li>
                     <li>
-                        <address>г. Киев, пр-т Леси Украинки, 26</address>
+                        <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
                     </li>
-                    <li class="contact-footer">
+                    <li class="footer__contact">
                         <a href="email:info@example.com">info@example.com</a>
                     </li>
-                    <li class="contact-footer">
+                    <li class="footer__contact">
                         <a href="tel:+380991111111">+38 099 111 11 11</a>
                     </li>
                 </ul>
             </div>
-            <div class="social">
+            <div class="footer__social">
                 <h3 class="h3-features">присоединяйтесь</h3>
-                <ul class="social-footer">
+                <ul class="footer__social-list">
                     <li>
                         <a href=""></a>
                         <!-- <img src="image/icons/insta.svg" alt="insta"> -->
-                        <svg class="icon-footer">
+                        <svg class="footer__icon">
                             <use href="./image/icons/sprite.svg#icon-insta"></use>
                         </svg>
                     </li>
-
+    
                     <li>
                         <a href=""></a>
                         <!-- <img src="image/icons/twitter.svg" alt="twit"> -->
-                        <svg class="icon-footer">
+                        <svg class="footer__icon">
                             <use href="./image/icons/sprite.svg#icon-twitter"></use>
                         </svg>
                     </li>
                     <li>
                         <a href=""></a>
                         <!-- <img src="image/icons/facebook.svg" alt="fb"> -->
-                        <svg class="icon-footer">
+                        <svg class="footer__icon">
                             <use href="./image/icons/sprite.svg#icon-facebook"></use>
                         </svg>
                     </li>
                     <li>
                         <a href=""></a>
                         <!-- <img src="image/icons/linkedin.svg" alt="in"> -->
-                        <svg class="icon-footer">
+                        <svg class="footer__icon">
                             <use href="./image/icons/sprite.svg#icon-linkedin"></use>
                         </svg>
                     </li>
                 </ul>
+            </div>
+            <div class="footer__form">
+                <form class="footer__input">
+                    <label class="footer__join-title">Подпишитесь на рассылку</label>
+                    <div class="footer__join-box">
+                        <input class="footer__join-input" type="email" name="email" placeholder="E-mail">
+                        <button class="footer__join-button" type="submit">Подписаться
+                            <svg class="footer__join-icon" width="24" height="24">
+                                <use href="./images/icons/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </footer>
