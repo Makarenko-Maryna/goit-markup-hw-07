@@ -2,18 +2,23 @@
   background-color: var(--footerColor--);
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../image/backgraund.jpg);
   height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/backgraund.jpg);
 }
 
 .hero__title {
   font-size: 44px;
   font-weight: 900;
   text-transform: uppercase;
-  width: 696px;
+  width: 600px;
   text-align: center;
   color: var(--white--);
   margin-left: auto;
@@ -22,16 +27,5 @@
 }
 
 .button {
-  @extend %button
-  // display: block;
-//   margin: 0 auto;
-//   background-color: var(--brendColor--);
-//   color: var(--white--);
-//   border: none;
-//   padding: 10px 32px;
-//   &:hover {
-//     background-color: var(--white--);
-//     color: var(--titleColor--);
-//     cursor: pointer;
-//   };;
+  @extend %button;
 }

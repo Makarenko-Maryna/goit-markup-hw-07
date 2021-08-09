@@ -1,4 +1,9 @@
-.h2 {
+.business {
+  padding-bottom: 94px;
+}
+%business__title {
+  font-weight: bold;
+  font-size: 36px;
   height: 42px;
   color: var(--titleColor--);
   text-align: center;
@@ -10,14 +15,11 @@
   justify-content: space-between;
 }
 
-.business__list {
+.business__image {
+  position: relative;
   & > li:not(:last-child) {
     margin-right: 30px;
   }
-}
-
-.business__image {
-  position: relative;
 }
 
 .business__wrapper {
