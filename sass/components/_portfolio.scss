@@ -2,28 +2,46 @@
   padding: 94px 0;
 }
 
-.portfolio__button-list {
-  margin-left: 280px;
+.portfolio-button__list {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
 
 /* .portfolio-buttom { */
-.portfolio__button-item {
+.portfolio-button__item:not(:last-child) {
   margin-right: 8px;
+}
+.portfolio__button {
+  font-family: Roboto;
+  background-color: var(--sectionColor--);
+  line-height: 26px;
+  color: var(--titleColor--);
+  padding: 6px 22px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-active {
+  background-color: var(--brendColor--);
+  color: var(--white--);
+  cursor: pointer;
 }
 
 .activ-prodject {
-  margin-top: calc(-1 * var(--white--));
-  margin-left: calc(-1 * var(--white--));
+  // margin-right: calc(-1 * 30px);
+  // margin-bottom: calc(-1 * 30px);
+  // margin-top: -30px;
+  // margin-left: -30px;
+  // flex-basis: calc((100% / 3-30px) / 3);
   display: flex;
-  flex-basis: calc(100% / 3 - var(--white--));
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 .card-portfolio {
-  width: 370px;
+  // width: 370px;
+}
+.card-portfolio {
+  position: relative;
+  overflow: hidden;
 }
 
 .example-of-prodject {
@@ -50,23 +68,40 @@
   opacity: 0;
   transform: translateY(100%);
   background-color: rgba(33, 149, 243, 0.904);
-  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 18px;
+  line-height: 28px;
   .example-of-prodject:hover & {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.activ-prodject h3 {
-  font-size: 18px;
-  color: var(--titleColor--);
-  margin: 20px 0 0 24px;
-  /* justify-content: center;
-  align-items: center; */
-}
-
 .activ-prodject li:hover {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.example-of-prodject {
+  margin-bottom: 30px;
+  margin-right: 10px;
+}
+.example__content {
+  padding: 20px 24px;
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.example__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  color: var(--titleColor--);
+  margin-bottom: 4px;
+}
+.example__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
 }
