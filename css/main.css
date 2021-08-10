@@ -271,6 +271,7 @@ section {
 }
 
 .hero {
+  padding-top: 0;
   background-color: var(--footerColor--);
   background-position: center;
   background-repeat: no-repeat;
@@ -346,7 +347,7 @@ section {
   padding-bottom: 94px;
 }
 
-.team__title {
+.business__title {
   font-weight: bold;
   font-size: 36px;
   height: 42px;
@@ -396,6 +397,11 @@ section {
 }
 
 .team__title {
+  font-weight: bold;
+  font-size: 36px;
+  height: 42px;
+  color: var(--titleColor--);
+  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -417,6 +423,7 @@ section {
 }
 
 .team__h3 {
+  font-size: 16px;
   height: 19px;
   color: var(--titleColor--);
   font-weight: 500;
@@ -534,20 +541,24 @@ section {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.cover-indent {
+  -ms-flex-preferred-size: calc((100%-90px) / 3);
+      flex-basis: calc((100%-90px) / 3);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.card-portfolio {
+  width: 370px;
 }
 
 .card-portfolio {
   position: relative;
   overflow: hidden;
-}
-
-.example-of-prodject {
-  margin-bottom: 30px;
-  border: 1px solid #eeeeee;
-}
-
-.example-of-prodject p {
-  padding: 4px 24px 20px 24px;
 }
 
 .card-portfolio {
@@ -583,16 +594,11 @@ section {
           transform: translateY(0);
 }
 
-.activ-prodject li:hover {
+.cover-indent:hover {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.example-of-prodject {
-  margin-bottom: 30px;
-  margin-right: 10px;
 }
 
 .example__content {
@@ -655,6 +661,7 @@ section {
 }
 
 .footer__address {
+  width: 240px;
   margin-top: 20px;
   font-style: normal;
   -webkit-transition-duration: 250ms;

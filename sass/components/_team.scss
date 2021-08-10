@@ -3,7 +3,11 @@
   padding-bottom: 94px;
 }
 .team__title {
-  @extend %business__title;
+  font-weight: bold;
+  font-size: 36px;
+  height: 42px;
+  color: var(--titleColor--);
+  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -20,6 +24,7 @@
   background: var(--white--);
 }
 .team__h3 {
+  font-size: 16px;
   height: 19px;
   color: var(--titleColor--);
   font-weight: 500;
